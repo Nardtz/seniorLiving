@@ -2,7 +2,7 @@
   "name": "react-form",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nardtz.github.io/react-form",
+  "homepage": "https://github.com/Nardtz/form-react.git",
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
