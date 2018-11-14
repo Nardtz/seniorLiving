@@ -1,0 +1,18 @@
+section {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.Section--blue {
+  background: #2eb0db;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.topHead {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
