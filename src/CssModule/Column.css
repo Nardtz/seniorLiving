@@ -16,7 +16,13 @@
   padding-bottom: 0.5rem;
   text-align: left;
 }
-
+.form__fields {
+  -webkit-transition: all 1500ms ease-in-out;
+  -moz-transition: all 1500ms ease-in-out;
+  -ms-transition: all 1500ms ease-in-out;
+  -o-transition: all 1500ms ease-in-out;
+  transition: all 1500ms ease-in-out;
+}
 .forms.column__sub {
   padding-top: 2.3rem;
   padding-bottom: 3rem;
@@ -33,13 +39,4 @@ select {
   color: #fff;
   line-height: 1.5rem;
   letter-spacing: 0.03rem;
-}
-
-.btn {
-  background: green;
-  padding: 12px 25px 12px;
-  color: #fff;
-  border: 0;
-  border-radius: 4px;
-  font-weight: 600;
 }

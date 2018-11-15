@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import "./css/Column.css";
-import "./css/section.css";
+import React from "react";
+import CSSTransitionGroup from "react-transition-group";
+
 const columnTwo = props => {
   return (
-    <div className="form__sub--2">
+    <div className="form__fields form__sub--2">
       <div class="column__sub_div">
         <label for="clientName" className="sub_div_label">
           Your first and last name

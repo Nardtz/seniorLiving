@@ -1,9 +1,8 @@
-import React, { Component } from "react";
-import "./css/Column.css";
-import "./css/section.css";
+import React from "react";
+
 const columnOne = props => {
   return (
-    <div className="form--sub1">
+    <div className="form__fields form--sub1">
       <div class="column__sub_div">
         <label for="careWho" className="sub_div_label">
           Who are you looking for?

@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+import { CSSTransitionGroup } from "react-transition-group";
 import "./App.css";
-import "./normalize.css";
+import "./CssModule/normalize.css";
+import "./CssModule/section.css";
+import "./CssModule/Column.css";
 import ColumnOne from "./Column/ColumnOne";
 import ColumnTwo from "./Column/ColumnTwo";
+import BottomSection from "./BottomSection/BottomSection";
 class App extends Component {
   state = {
     formInputs: {
@@ -35,14 +39,16 @@ class App extends Component {
               <img src="https://www.caringforaparent.com/assets/sem_pages/costs/may2013_tea-99f122ce0400d5eed91eb2db0b86c710.png" />
             </div>
             <div className="form column__sub">
-              {this.state.showSecondFormFields === false ? (
-                <ColumnOne
-                  where={this.state.formInputs.lookingFor}
-                  email={this.state.formInputs.email}
-                />
-              ) : null}
-
-              {this.state.showSecondFormFields === true ? <ColumnTwo /> : null}
+              <form>
+                {this.state.showSecondFormFields === false ? (
+                  <ColumnOne
+                    where={this.state.formInputs.lookingFor}
+                    email={this.state.formInputs.email}
+                  />
+                ) : (
+                  <ColumnTwo />
+                )}
+              </form>
               <div class="column__sub_div">
                 <button
                   value="Get Started"
@@ -57,9 +63,11 @@ class App extends Component {
             </div>
           </div>
         </section>
+        <section>
+          <BottomSection />
+        </section>
       </div>
     );
   }
 }
-
 export default App;
