@@ -31,7 +31,12 @@ const columnOne = props => {
           Your e-mail address
         </label>
         <br />
-        <input type="email" id="email" value={props.email} />
+        <input
+          type="email"
+          id="email"
+          value={props.email}
+          className="form-control"
+        />
       </div>
     </div>
   );

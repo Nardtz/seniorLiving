@@ -7,15 +7,18 @@
   width: 50%;
   float: left;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .column__sub_div {
   width: 100%;
-  float: left;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: left;
+  max-width: 24rem;
+  margin: 0 auto;
 }
+
 .form__fields {
   -webkit-transition: all 1500ms ease-in-out;
   -moz-transition: all 1500ms ease-in-out;
@@ -23,9 +26,10 @@
   -o-transition: all 1500ms ease-in-out;
   transition: all 1500ms ease-in-out;
 }
-.forms.column__sub {
-  padding-top: 2.3rem;
-  padding-bottom: 3rem;
+
+.form.column__sub {
+  padding-top: 0.6rem;
+  padding-bottom: 1.2rem;
 }
 
 input,
@@ -33,10 +37,62 @@ select {
   height: 2.3rem;
   box-sizing: border-box;
   min-width: 18rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding-left: 0.4rem;
 }
 
 .sub_div_label {
-  color: #fff;
+  color: #242424;
   line-height: 1.5rem;
   letter-spacing: 0.03rem;
+}
+
+.btn {
+  background: #08a750;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  display: block;
+  width: 18rem;
+  height: 3rem;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  border: 1px solid #01662f;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3f60ad;
+  border: 1px solid #10307c;
+}
+@media screen and (max-width: 36rem) {
+}
+@media screen and (max-width: 36rem) {
+  .maps.column__sub,
+  img.tree {
+    display: none;
+  }
+  .column__sub {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .Seal {
+    margin-top: 0.625rem;
+    max-width: 200px;
+    padding-bottom: 1rem;
+  }
+
+  .List {
+    margin-top: 2rem;
+  }
 }

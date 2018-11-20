@@ -7,14 +7,17 @@ import "./CssModule/Column.css";
 import ColumnOne from "./Column/ColumnOne";
 import ColumnTwo from "./Column/ColumnTwo";
 import BottomSection from "./BottomSection/BottomSection";
+import Tree from "./tree-colored.png";
+import Logo from "./Assisted-Living-Logo.png";
+
 class App extends Component {
   state = {
     formInputs: {
       careWho: "",
-      lookingFor: "Lynard",
-      email: "cruzial@gmail.com",
-      clientName: "New client",
-      phone: "0949545445"
+      lookingFor: "",
+      email: "",
+      clientName: "",
+      phone: ""
     },
     showSecondFormFields: false
   };
@@ -27,16 +30,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <section className="Section">
-          <h1 className="logo">Your Logo</h1>
+        <section className="Section Header">
+          <img src={Logo} className="Logo" />
         </section>
         <section className="Section Section--blue">
-          <h1 className="topHead">
-            Find Assisted Living Costs Near undefined, undefined
-          </h1>
+          <h1 className="topHead">Find Assisted Living Costs Near You</h1>
           <div className="column">
             <div className="maps column__sub">
-              <img src="https://www.caringforaparent.com/assets/sem_pages/costs/may2013_tea-99f122ce0400d5eed91eb2db0b86c710.png" />
+              <img src={Tree} class="tree" />
             </div>
             <div className="form column__sub">
               <form>

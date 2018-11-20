@@ -4,7 +4,7 @@ import Seal from "../truste-seal.jpg";
 const bottomSection = props => {
   return (
     <div className="Column">
-      <div class="column__sub">
+      <div class="column__sub bottom--left">
         <ul className="List">
           <li>Find Cost Information</li>
           <li>See Pictures of Communities</li>

@@ -5,14 +5,14 @@ const columnTwo = props => {
   return (
     <div className="form__fields form__sub--2">
       <div class="column__sub_div">
-        <label for="clientName" className="sub_div_label">
+        <label htmlFor="clientName" className="sub_div_label">
           Your first and last name
         </label>
         <br />
         <input type="text" id="clientName" value={props.where} />
       </div>
       <div class="column__sub_div">
-        <label for="phone" className="sub_div_label">
+        <label htmlFor="phone" className="sub_div_label">
           Your phone number
         </label>
         <br />

@@ -2,38 +2,33 @@ section {
   width: 100%;
   float: left;
   text-align: center;
+  box-sizing: border-box;
+}
+
+section.Section.Header img {
+  height: 3.4rem;
+}
+
+section.Section.Header {
+  border-bottom: 1px solid #ccc;
+  padding-top: 0.4rem;
+  padding-bottom: 0.3rem;
+  padding-left: 2rem;
+  text-align: left;
 }
 
 .Section--blue {
-  background: #2eb0db;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  background: #c7ebff;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .topHead {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #fff;
-}
-
-.btn {
-  background: green;
-  padding: 12px 25px 12px;
-  color: #fff;
-  border: 0;
-  border-radius: 4px;
-  font-weight: 600;
-
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -ms-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-
-.btn:hover {
-  background: #33cc36;
+  font-weight: 400;
+  color: #323232;
 }
 
 .List {
@@ -45,8 +40,27 @@ section {
   font-size: 1.6rem;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
+  padding-left: 0;
 }
 
 .Seal {
-  margin-top: 6rem;
+  margin-top: 7rem;
+  max-width: 12rem;
+}
+
+.tree {
+  max-width: 22rem;
+}
+
+.bottom--left {
+  padding-left: 6%;
+}
+
+.List li {
+  background: url("../check.png");
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  font-size: 1.3rem;
+  line-height: 2.7rem;
+  background-position-y: 6px;
 }
