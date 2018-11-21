@@ -24,7 +24,12 @@ const columnOne = props => {
           Where are you looking for care?
         </label>
         <br />
-        <input type="text" id="lookingFor" value={props.where} />
+        <input
+          type="text"
+          id="lookingFor"
+          value={props.where}
+          placeholder="Zip Code or City, State"
+        />
       </div>
       <div class="column__sub_div">
         <label for="email" className="sub_div_label">
