@@ -29,6 +29,7 @@ const columnOne = props => {
           id="lookingFor"
           value={props.where}
           placeholder="Zip Code or City, State"
+          onChange={props.changed}
         />
       </div>
       <div class="column__sub_div">

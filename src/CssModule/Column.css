@@ -1,5 +1,5 @@
 .column {
-  max-width: 75rem;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19,6 +19,24 @@
   margin: 0 auto;
 }
 
+.topHead {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #323232;
+  width: 100%;
+  font-size: 1.4em;
+}
+
+.form-holder {
+  margin: 3rem auto;
+  max-width: 380px;
+  background: #fff;
+  padding: 1rem 1rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px #666;
+}
+
 .form__fields {
   -webkit-transition: all 1500ms ease-in-out;
   -moz-transition: all 1500ms ease-in-out;
@@ -34,12 +52,13 @@
 
 input,
 select {
-  height: 2.3rem;
+  height: 2.5rem;
   box-sizing: border-box;
   min-width: 18rem;
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   padding-left: 0.4rem;
+  width: 100%;
 }
 
 .sub_div_label {
@@ -67,6 +86,8 @@ select {
   border: 1px solid #01662f;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .btn:hover {
