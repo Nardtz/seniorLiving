@@ -117,3 +117,15 @@ section.Section.Header {
 .star .iconHolder svg {
   color: #a5c63b;
 }
+
+@media screen and (max-width: 72rem) {
+  .oneFourth {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 36rem) {
+  .oneFourth {
+    width: 100%;
+  }
+}

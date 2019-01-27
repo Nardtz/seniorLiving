@@ -94,8 +94,7 @@ select {
   background: #3f60ad;
   border: 1px solid #10307c;
 }
-@media screen and (max-width: 36rem) {
-}
+
 @media screen and (max-width: 36rem) {
   .maps.column__sub,
   img.tree {
